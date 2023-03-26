@@ -15,6 +15,8 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -46,7 +48,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(219, 19, 19));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -84,7 +86,7 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel4.setBackground(new java.awt.Color(255, 0, 0));
+        jPanel4.setBackground(new java.awt.Color(201, 52, 52));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -151,7 +153,7 @@ public class Login extends javax.swing.JFrame {
                     .addContainerGap(245, Short.MAX_VALUE)))
         );
 
-        jPanel5.setBackground(new java.awt.Color(255, 0, 0));
+        jPanel5.setBackground(new java.awt.Color(201, 52, 52));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         btnRegistrarse.setBackground(new java.awt.Color(255, 255, 0));
@@ -199,10 +201,10 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 610, 430));
+        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 610, 430));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/fondoLogin.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 550));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -212,7 +214,7 @@ public class Login extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

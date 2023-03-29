@@ -113,7 +113,7 @@ public class Registro extends javax.swing.JFrame {
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 110, 90));
 
         txtTerminosCondiciones.setEditable(false);
-        txtTerminosCondiciones.setBackground(new java.awt.Color(201, 52, 52));
+        txtTerminosCondiciones.setBackground(new java.awt.Color(102, 193, 193));
         txtTerminosCondiciones.setColumns(20);
         txtTerminosCondiciones.setRows(5);
         jScrollPane1.setViewportView(txtTerminosCondiciones);
@@ -125,7 +125,7 @@ public class Registro extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 320, 520));
 
-        jPanel4.setBackground(new java.awt.Color(201, 52, 52));
+        jPanel4.setBackground(new java.awt.Color(102, 193, 193));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txtPasword.setBackground(new java.awt.Color(255, 255, 255));
@@ -271,7 +271,7 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addGap(27, 27, 27)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -279,7 +279,7 @@ public class Registro extends javax.swing.JFrame {
                     .addComponent(noAcepta))
                 .addGap(17, 17, 17)
                 .addComponent(jButton1)
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 450, 450));

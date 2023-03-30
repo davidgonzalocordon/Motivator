@@ -341,7 +341,7 @@ public class InicioAdmin extends javax.swing.JFrame {
 
         cmbTipo.setBackground(new java.awt.Color(255, 255, 51));
         cmbTipo.setForeground(new java.awt.Color(0, 0, 0));
-        cmbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Centro Comercial", "Parque", "Monumento", "Museo", "Restaurante", "otros" }));
+        cmbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Centro Comercial", "Parque", "Monumento", "Museo", "otros" }));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);

@@ -47,6 +47,7 @@ public class InicioAdmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         btEliminarUsuario = new javax.swing.JButton();
+        btnAgregarLugar = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         btVerLugar = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
@@ -59,6 +60,7 @@ public class InicioAdmin extends javax.swing.JFrame {
         btnBuscarLugar = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         tableLugares = new javax.swing.JTable();
+        btnAgregarlugar = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         btVerRestaurante = new javax.swing.JButton();
@@ -71,6 +73,7 @@ public class InicioAdmin extends javax.swing.JFrame {
         btnBuscarRestaurante = new javax.swing.JButton();
         jScrollPane8 = new javax.swing.JScrollPane();
         tableRestaurante = new javax.swing.JTable();
+        btnAgregarRestaurante = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         btActualizar = new javax.swing.JButton();
@@ -191,6 +194,10 @@ public class InicioAdmin extends javax.swing.JFrame {
         btEliminarUsuario.setForeground(new java.awt.Color(0, 0, 0));
         btEliminarUsuario.setText("ELIMINAR");
 
+        btnAgregarLugar.setBackground(new java.awt.Color(255, 255, 51));
+        btnAgregarLugar.setForeground(new java.awt.Color(0, 0, 0));
+        btnAgregarLugar.setText("AGREGAR");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -217,7 +224,9 @@ public class InicioAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(267, 267, 267)
                         .addComponent(btnBuscarUsuario)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
+                        .addGap(34, 34, 34)
+                        .addComponent(btnAgregarLugar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                         .addComponent(btEliminarUsuario)
                         .addGap(265, 265, 265))))
         );
@@ -235,7 +244,8 @@ public class InicioAdmin extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscarUsuario)
-                    .addComponent(btEliminarUsuario))
+                    .addComponent(btEliminarUsuario)
+                    .addComponent(btnAgregarLugar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE)
                 .addContainerGap())
@@ -290,6 +300,10 @@ public class InicioAdmin extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(tableLugares);
 
+        btnAgregarlugar.setBackground(new java.awt.Color(255, 255, 51));
+        btnAgregarlugar.setForeground(new java.awt.Color(0, 0, 0));
+        btnAgregarlugar.setText("AGREGAR");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -309,11 +323,13 @@ public class InicioAdmin extends javax.swing.JFrame {
                 .addComponent(cmbCalificacionLugar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50))
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(279, 279, 279)
+                .addGap(199, 199, 199)
                 .addComponent(btnBuscarLugar)
-                .addGap(48, 48, 48)
+                .addGap(35, 35, 35)
+                .addComponent(btnAgregarlugar)
+                .addGap(33, 33, 33)
                 .addComponent(btVerLugar)
-                .addGap(56, 56, 56)
+                .addGap(27, 27, 27)
                 .addComponent(btEliminarLugar)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel6Layout.createSequentialGroup()
@@ -336,7 +352,8 @@ public class InicioAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscarLugar)
                     .addComponent(btEliminarLugar)
-                    .addComponent(btVerLugar))
+                    .addComponent(btVerLugar)
+                    .addComponent(btnAgregarlugar))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
                 .addContainerGap())
@@ -391,6 +408,10 @@ public class InicioAdmin extends javax.swing.JFrame {
         ));
         jScrollPane8.setViewportView(tableRestaurante);
 
+        btnAgregarRestaurante.setBackground(new java.awt.Color(255, 255, 51));
+        btnAgregarRestaurante.setForeground(new java.awt.Color(0, 0, 0));
+        btnAgregarRestaurante.setText("AGREGAR");
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -410,17 +431,19 @@ public class InicioAdmin extends javax.swing.JFrame {
                 .addComponent(cmbCalificacionRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50))
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(279, 279, 279)
-                .addComponent(btnBuscarRestaurante)
-                .addGap(48, 48, 48)
-                .addComponent(btVerRestaurante)
-                .addGap(56, 56, 56)
-                .addComponent(btEliminarRestaurante)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane8)
                 .addContainerGap())
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(223, 223, 223)
+                .addComponent(btnBuscarRestaurante)
+                .addGap(34, 34, 34)
+                .addComponent(btnAgregarRestaurante)
+                .addGap(37, 37, 37)
+                .addComponent(btEliminarRestaurante)
+                .addGap(34, 34, 34)
+                .addComponent(btVerRestaurante)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -437,7 +460,8 @@ public class InicioAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBuscarRestaurante)
                     .addComponent(btEliminarRestaurante)
-                    .addComponent(btVerRestaurante))
+                    .addComponent(btVerRestaurante)
+                    .addComponent(btnAgregarRestaurante))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
                 .addContainerGap())
@@ -686,6 +710,9 @@ public class InicioAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btUsuario;
     private javax.swing.JButton btVerLugar;
     private javax.swing.JButton btVerRestaurante;
+    private javax.swing.JButton btnAgregarLugar;
+    private javax.swing.JButton btnAgregarRestaurante;
+    private javax.swing.JButton btnAgregarlugar;
     private javax.swing.JButton btnBuscarLugar;
     private javax.swing.JButton btnBuscarRestaurante;
     private javax.swing.JButton btnBuscarUsuario;

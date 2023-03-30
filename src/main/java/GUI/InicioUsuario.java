@@ -219,7 +219,7 @@ public class InicioUsuario extends javax.swing.JFrame {
 
             },
             new String [] {
-                "NOMBRE", "DIRECCION", "CALIFICACCION ", "VER"
+                "NOMBRE", "DIRECCION", "CALIFICACCION "
             }
         ));
         jScrollPane3.setViewportView(tableLugares);
@@ -320,7 +320,7 @@ public class InicioUsuario extends javax.swing.JFrame {
 
             },
             new String [] {
-                "NOMBRE", "DIRECCION", "CALIFICACCION ", "VER"
+                "NOMBRE", "DIRECCION", "TELEFONO", "CALIFICACCION"
             }
         ));
         jScrollPane5.setViewportView(tableRestaurantes);

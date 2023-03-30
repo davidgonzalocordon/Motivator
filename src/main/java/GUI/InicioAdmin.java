@@ -103,7 +103,7 @@ public class InicioAdmin extends javax.swing.JFrame {
 
         btEmprezas.setBackground(new java.awt.Color(255, 255, 51));
         btEmprezas.setForeground(new java.awt.Color(0, 0, 0));
-        btEmprezas.setText("Emprezas");
+        btEmprezas.setText("Empresas");
 
         btConfiguracion.setBackground(new java.awt.Color(255, 255, 51));
         btConfiguracion.setForeground(new java.awt.Color(0, 0, 0));
@@ -691,11 +691,6 @@ public class InicioAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btnBuscarUsuario;
     private javax.swing.JComboBox<String> cmbCalificacionLugar;
     private javax.swing.JComboBox<String> cmbCalificacionRestaurante;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -714,7 +709,6 @@ public class InicioAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;

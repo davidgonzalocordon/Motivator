@@ -39,7 +39,7 @@ public class Registro extends javax.swing.JFrame {
         txtTerminosCondiciones = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        txtPasword = new javax.swing.JPasswordField();
+        txtPassword = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -49,13 +49,13 @@ public class Registro extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         siAcepta = new javax.swing.JRadioButton();
         noAcepta = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
+        btnRegistrar = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         txtUsuario = new javax.swing.JTextField();
         txtEdad = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
-        txtValidacionPasword = new javax.swing.JPasswordField();
+        txtValidacionPassword = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -128,11 +128,11 @@ public class Registro extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(102, 193, 193));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtPasword.setBackground(new java.awt.Color(255, 255, 255));
-        txtPasword.setForeground(new java.awt.Color(0, 0, 0));
-        txtPasword.addActionListener(new java.awt.event.ActionListener() {
+        txtPassword.setBackground(new java.awt.Color(255, 255, 255));
+        txtPassword.setForeground(new java.awt.Color(0, 0, 0));
+        txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPaswordActionPerformed(evt);
+                txtPasswordActionPerformed(evt);
             }
         });
 
@@ -164,17 +164,19 @@ public class Registro extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Acepta los terminos y condiciones de MOTIVATOR: ");
 
-        siAcepta.setBackground(new java.awt.Color(201, 52, 52));
+        siAcepta.setBackground(new java.awt.Color(102, 193, 193));
         AceptaTerminosONoAcepta.add(siAcepta);
+        siAcepta.setForeground(new java.awt.Color(0, 0, 0));
         siAcepta.setText("SI");
 
-        noAcepta.setBackground(new java.awt.Color(201, 52, 52));
+        noAcepta.setBackground(new java.awt.Color(102, 193, 193));
         AceptaTerminosONoAcepta.add(noAcepta);
+        noAcepta.setForeground(new java.awt.Color(0, 0, 0));
         noAcepta.setText("NO");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 51));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Registrar");
+        btnRegistrar.setBackground(new java.awt.Color(255, 255, 51));
+        btnRegistrar.setForeground(new java.awt.Color(0, 0, 0));
+        btnRegistrar.setText("Registrar");
 
         jLabel11.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
@@ -188,11 +190,11 @@ public class Registro extends javax.swing.JFrame {
 
         txtEmail.setBackground(new java.awt.Color(255, 255, 255));
 
-        txtValidacionPasword.setBackground(new java.awt.Color(255, 255, 255));
-        txtValidacionPasword.setForeground(new java.awt.Color(0, 0, 0));
-        txtValidacionPasword.addActionListener(new java.awt.event.ActionListener() {
+        txtValidacionPassword.setBackground(new java.awt.Color(255, 255, 255));
+        txtValidacionPassword.setForeground(new java.awt.Color(0, 0, 0));
+        txtValidacionPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtValidacionPaswordActionPerformed(evt);
+                txtValidacionPasswordActionPerformed(evt);
             }
         });
 
@@ -203,32 +205,13 @@ public class Registro extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtEdad)
-                            .addComponent(txtUsuario)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNombre))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtValidacionPasword, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(30, 30, 30)
-                        .addComponent(txtPasword))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGap(0, 10, Short.MAX_VALUE)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel10)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel4Layout.createSequentialGroup()
@@ -238,7 +221,30 @@ public class Registro extends javax.swing.JFrame {
                                 .addComponent(noAcepta))
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(159, 159, 159)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(4, 4, 4))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtValidacionPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(30, 30, 30)
+                                .addComponent(txtPassword))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel11))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                                    .addComponent(txtEdad))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -262,11 +268,11 @@ public class Registro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(txtPasword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(txtValidacionPasword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtValidacionPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
@@ -278,7 +284,7 @@ public class Registro extends javax.swing.JFrame {
                     .addComponent(siAcepta)
                     .addComponent(noAcepta))
                 .addGap(17, 17, 17)
-                .addComponent(jButton1)
+                .addComponent(btnRegistrar)
                 .addContainerGap())
         );
 
@@ -298,13 +304,13 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtPaswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPaswordActionPerformed
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPaswordActionPerformed
+    }//GEN-LAST:event_txtPasswordActionPerformed
 
-    private void txtValidacionPaswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtValidacionPaswordActionPerformed
+    private void txtValidacionPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtValidacionPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtValidacionPaswordActionPerformed
+    }//GEN-LAST:event_txtValidacionPasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -350,7 +356,7 @@ public class Registro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup AceptaTerminosONoAcepta;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnRegistrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -373,9 +379,9 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JTextField txtEdad;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtNombre;
-    private javax.swing.JPasswordField txtPasword;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextArea txtTerminosCondiciones;
     private javax.swing.JTextField txtUsuario;
-    private javax.swing.JPasswordField txtValidacionPasword;
+    private javax.swing.JPasswordField txtValidacionPassword;
     // End of variables declaration//GEN-END:variables
 }

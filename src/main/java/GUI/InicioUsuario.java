@@ -32,11 +32,11 @@ public class InicioUsuario extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btRecomendaciones = new javax.swing.JButton();
+        btBuscadorRestaurantes = new javax.swing.JButton();
+        btEmpresas = new javax.swing.JButton();
+        btConfiguracion = new javax.swing.JButton();
+        btBuscadorLugares = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -50,7 +50,8 @@ public class InicioUsuario extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         tableLugares = new javax.swing.JTable();
         cmbCalificacionLugar = new javax.swing.JComboBox<>();
-        btnBuscar = new javax.swing.JButton();
+        btnBuscarLugar = new javax.swing.JButton();
+        btVerLugares = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         txtNombreRestaurante = new javax.swing.JTextField();
@@ -58,9 +59,10 @@ public class InicioUsuario extends javax.swing.JFrame {
         txtDireccionRestaurante = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
         cmbCalificacionRestaurante = new javax.swing.JComboBox<>();
-        btnBuscar1 = new javax.swing.JButton();
+        btnBuscarRestaurante = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
         tableRestaurantes = new javax.swing.JTable();
+        btVerRestaurnate = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -71,7 +73,8 @@ public class InicioUsuario extends javax.swing.JFrame {
         txtPassword = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
-        jButton25 = new javax.swing.JButton();
+        btActualizar = new javax.swing.JButton();
+        btCerrarSesion = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,25 +103,25 @@ public class InicioUsuario extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(102, 193, 193));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 51));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Recomendados");
+        btRecomendaciones.setBackground(new java.awt.Color(255, 255, 51));
+        btRecomendaciones.setForeground(new java.awt.Color(0, 0, 0));
+        btRecomendaciones.setText("Recomendados");
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 51));
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Buscar Restaurantes");
+        btBuscadorRestaurantes.setBackground(new java.awt.Color(255, 255, 51));
+        btBuscadorRestaurantes.setForeground(new java.awt.Color(0, 0, 0));
+        btBuscadorRestaurantes.setText("Buscar Restaurantes");
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 51));
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("Emprezas");
+        btEmpresas.setBackground(new java.awt.Color(255, 255, 51));
+        btEmpresas.setForeground(new java.awt.Color(0, 0, 0));
+        btEmpresas.setText("Empresas");
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 51));
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/config.png"))); // NOI18N
+        btConfiguracion.setBackground(new java.awt.Color(255, 255, 51));
+        btConfiguracion.setForeground(new java.awt.Color(0, 0, 0));
+        btConfiguracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/config.png"))); // NOI18N
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 51));
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("Buscar Lugares");
+        btBuscadorLugares.setBackground(new java.awt.Color(255, 255, 51));
+        btBuscadorLugares.setForeground(new java.awt.Color(0, 0, 0));
+        btBuscadorLugares.setText("Buscar Lugares");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -126,30 +129,30 @@ public class InicioUsuario extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btConfiguracion, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
+                    .addComponent(btEmpresas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btBuscadorLugares, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btRecomendaciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btBuscadorRestaurantes, javax.swing.GroupLayout.DEFAULT_SIZE, 141, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(42, 42, 42)
-                .addComponent(jButton1)
+                .addComponent(btRecomendaciones)
                 .addGap(26, 26, 26)
-                .addComponent(jButton5)
+                .addComponent(btBuscadorLugares)
                 .addGap(26, 26, 26)
-                .addComponent(jButton2)
+                .addComponent(btBuscadorRestaurantes)
                 .addGap(30, 30, 30)
-                .addComponent(jButton3)
+                .addComponent(btEmpresas)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(btConfiguracion)
                 .addContainerGap())
         );
 
@@ -221,9 +224,17 @@ public class InicioUsuario extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(tableLugares);
 
+        cmbCalificacionLugar.setBackground(new java.awt.Color(255, 255, 51));
+        cmbCalificacionLugar.setForeground(new java.awt.Color(0, 0, 0));
         cmbCalificacionLugar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "☆1", "☆2", "☆3", "☆4", "☆5" }));
 
-        btnBuscar.setText("BUSCAR");
+        btnBuscarLugar.setBackground(new java.awt.Color(255, 255, 51));
+        btnBuscarLugar.setForeground(new java.awt.Color(0, 0, 0));
+        btnBuscarLugar.setText("BUSCAR");
+
+        btVerLugares.setBackground(new java.awt.Color(255, 255, 51));
+        btVerLugares.setForeground(new java.awt.Color(0, 0, 0));
+        btVerLugares.setText("VER");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -248,8 +259,10 @@ public class InicioUsuario extends javax.swing.JFrame {
                         .addGap(0, 64, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(389, 389, 389)
-                .addComponent(btnBuscar)
+                .addGap(271, 271, 271)
+                .addComponent(btnBuscarLugar)
+                .addGap(106, 106, 106)
+                .addComponent(btVerLugares, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -264,7 +277,9 @@ public class InicioUsuario extends javax.swing.JFrame {
                     .addComponent(jLabel18)
                     .addComponent(cmbCalificacionLugar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10)
-                .addComponent(btnBuscar)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBuscarLugar)
+                    .addComponent(btVerLugares))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
                 .addContainerGap())
@@ -294,7 +309,9 @@ public class InicioUsuario extends javax.swing.JFrame {
 
         cmbCalificacionRestaurante.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "☆1", "☆2", "☆3", "☆4", "☆5" }));
 
-        btnBuscar1.setText("BUSCAR");
+        btnBuscarRestaurante.setBackground(new java.awt.Color(255, 255, 51));
+        btnBuscarRestaurante.setForeground(new java.awt.Color(0, 0, 0));
+        btnBuscarRestaurante.setText("BUSCAR");
 
         tableRestaurantes.setBackground(new java.awt.Color(255, 255, 255));
         tableRestaurantes.setForeground(new java.awt.Color(0, 0, 0));
@@ -308,6 +325,10 @@ public class InicioUsuario extends javax.swing.JFrame {
         ));
         jScrollPane5.setViewportView(tableRestaurantes);
 
+        btVerRestaurnate.setBackground(new java.awt.Color(255, 255, 51));
+        btVerRestaurnate.setForeground(new java.awt.Color(0, 0, 0));
+        btVerRestaurnate.setText("VER");
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -317,22 +338,24 @@ public class InicioUsuario extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane5)
                     .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(jLabel19)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtNombreRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtNombreRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(12, 12, 12)
+                                .addComponent(btnBuscarRestaurante)
+                                .addGap(123, 123, 123)
+                                .addComponent(btVerRestaurnate, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addComponent(jLabel20)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtDireccionRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(33, 33, 33)
                                 .addComponent(jLabel31)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cmbCalificacionRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(377, 377, 377)
-                                .addComponent(btnBuscar1)))
+                                .addComponent(cmbCalificacionRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 64, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -348,7 +371,9 @@ public class InicioUsuario extends javax.swing.JFrame {
                     .addComponent(jLabel31)
                     .addComponent(cmbCalificacionRestaurante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10)
-                .addComponent(btnBuscar1)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBuscarRestaurante)
+                    .addComponent(btVerRestaurnate))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
                 .addContainerGap())
@@ -393,11 +418,15 @@ public class InicioUsuario extends javax.swing.JFrame {
         jLabel32.setBackground(new java.awt.Color(255, 255, 255));
         jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel32.setText("DATOS DE LA EMPRESA ");
+        jLabel32.setText("DATOS DEL USUARIO ");
 
-        jButton25.setBackground(new java.awt.Color(255, 255, 51));
-        jButton25.setForeground(new java.awt.Color(0, 0, 0));
-        jButton25.setText("Actualizar");
+        btActualizar.setBackground(new java.awt.Color(255, 255, 51));
+        btActualizar.setForeground(new java.awt.Color(0, 0, 0));
+        btActualizar.setText("Actualizar");
+
+        btCerrarSesion.setBackground(new java.awt.Color(255, 255, 51));
+        btCerrarSesion.setForeground(new java.awt.Color(0, 0, 0));
+        btCerrarSesion.setText("Cerrar Sesion");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -406,11 +435,11 @@ public class InicioUsuario extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(327, 327, 327)
                 .addComponent(jLabel32)
-                .addGap(0, 242, Short.MAX_VALUE))
+                .addGap(0, 267, Short.MAX_VALUE))
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel9Layout.createSequentialGroup()
                                 .addComponent(jLabel28)
@@ -431,8 +460,10 @@ public class InicioUsuario extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtPassword))))
                     .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(jButton25)
-                        .addGap(288, 288, 288)))
+                        .addGap(295, 295, 295)
+                        .addComponent(btActualizar)
+                        .addGap(97, 97, 97)
+                        .addComponent(btCerrarSesion)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
@@ -452,9 +483,11 @@ public class InicioUsuario extends javax.swing.JFrame {
                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel29)
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
-                .addComponent(jButton25)
-                .addGap(67, 67, 67))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btActualizar)
+                    .addComponent(btCerrarSesion))
+                .addGap(73, 73, 73))
         );
 
         jTabbedPane1.addTab("Configuracion", jPanel9);
@@ -557,16 +590,19 @@ public class InicioUsuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscar;
-    private javax.swing.JButton btnBuscar1;
+    private javax.swing.JButton btActualizar;
+    private javax.swing.JButton btBuscadorLugares;
+    private javax.swing.JButton btBuscadorRestaurantes;
+    private javax.swing.JButton btCerrarSesion;
+    private javax.swing.JButton btConfiguracion;
+    private javax.swing.JButton btEmpresas;
+    private javax.swing.JButton btRecomendaciones;
+    private javax.swing.JButton btVerLugares;
+    private javax.swing.JButton btVerRestaurnate;
+    private javax.swing.JButton btnBuscarLugar;
+    private javax.swing.JButton btnBuscarRestaurante;
     private javax.swing.JComboBox<String> cmbCalificacionLugar;
     private javax.swing.JComboBox<String> cmbCalificacionRestaurante;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
